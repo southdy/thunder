@@ -14,8 +14,6 @@
 
 #include "pluginmanager.h"
 
-#define OVERRIDE "uni.texture0"
-
 Viewport::Viewport(QWidget *parent) :
         QWidget(parent),
         m_pController(nullptr) {

@@ -19,6 +19,7 @@ void RenderTargetGL::bindBuffer(uint32_t level) {
         case ToBeUpdated: {
             if(updateBuffer(level)) {
                 setState(Ready);
+                return;
             }
         } break;
         default: break;

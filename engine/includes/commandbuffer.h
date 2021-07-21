@@ -58,6 +58,8 @@ public:
 
     virtual Texture *texture(const char *name) const;
 
+    virtual void finish();
+
     static Vector4 idToColor(uint32_t id);
 
     static bool isInited();
