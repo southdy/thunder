@@ -65,9 +65,7 @@ MaterialEdit::MaterialEdit(DocumentModel *document) :
 
     Scene *scene = glWidget->scene();
     m_pLight = Engine::composeActor("DirectLight", "LightSource", scene);
-    Matrix3 rot;
-    rot.rotate(Vector3(-45.0f, 45.0f, 0.0f));
-    m_pLight->transform()->setQuaternion(rot);
+    m_pLight->transform()->setRotation(Vector3(-45.0f, 45.0f, 0.0f));
 
     Camera *camera = glWidget->controller()->camera();
     if(camera) {
